@@ -3,160 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic vs. Earnings</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 12px;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .explanations {
-            margin-top: 1.5rem;
-        }
-
-        .explanations p {
-            margin: 0.5rem 0;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Traffic vs. Earnings Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Traffic vs. Earnings Breakdown</h1>
-    </header>
-    <div class="container">
-        <h1>Earnings Table</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Traffic (Monthly)</th>
-                    <th>Ad Earnings (CPM $3)</th>
-                    <th>Affiliate Earnings (Est.)</th>
-                    <th>Sponsored Posts (Est.)</th>
-                    <th>Total Earnings Range</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1,000</td>
-                    <td>$3</td>
-                    <td>$10–$50</td>
-                    <td>$50–$100</td>
-                    <td>$63–$153</td>
-                </tr>
-                <tr>
-                    <td>5,000</td>
-                    <td>$15</td>
-                    <td>$50–$200</td>
-                    <td>$100–$300</td>
-                    <td>$165–$515</td>
-                </tr>
-                <tr>
-                    <td>10,000</td>
-                    <td>$30</td>
-                    <td>$100–$300</td>
-                    <td>$200–$500</td>
-                    <td>$330–$830</td>
-                </tr>
-                <tr>
-                    <td>50,000</td>
-                    <td>$150</td>
-                    <td>$500–$1,000</td>
-                    <td>$500–$2,000</td>
-                    <td>$1,150–$3,150</td>
-                </tr>
-                <tr>
-                    <td>100,000</td>
-                    <td>$300–$1,000</td>
-                    <td>$1,000–$3,000</td>
-                    <td>$2,000–$5,000</td>
-                    <td>$3,300–$9,000</td>
-                </tr>
-                <tr>
-                    <td>500,000</td>
-                    <td>$1,500–$5,000</td>
-                    <td>$5,000–$15,000</td>
-                    <td>$10,000–$25,000</td>
-                    <td>$16,500–$45,000</td>
-                </tr>
-                <tr>
-                    <td>1,000,000</td>
-                    <td>$3,000–$10,000</td>
-                    <td>$10,000–$30,000</td>
-                    <td>$20,000–$50,000</td>
-                    <td>$33,000–$90,000</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="explanations">
-            <p><strong>Traffic (Monthly):</strong> The number of unique visitors your website receives each month.</p>
-            <p><strong>Ad Earnings (CPM $3):</strong> Revenue generated from ads, based on a $3 cost per 1,000 impressions.</p>
-            <p><strong>Affiliate Earnings (Est.):</strong> Income earned through affiliate links when visitors purchase products or services.</p>
-            <p><strong>Sponsored Posts (Est.):</strong> Payments received for publishing promotional content on your website.</p>
-            <p><strong>Total Earnings Range:</strong> The combined revenue from ads, affiliate sales, and sponsored posts.</p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="#" class="text-2xl font-bold">Traffic Earnings</a>
+            <div>
+                <a href="#overview" class="px-4 hover:underline">Overview</a>
+                <a href="#benefits" class="px-4 hover:underline">Benefits</a>
+                <a href="#details" class="px-4 hover:underline">Details</a>
+                <a href="#contact" class="px-4 hover:underline">Contact</a>
+            </div>
         </div>
+    </nav>
+
+    <!-- Full-Width Banner -->
+    <div class="bg-blue-500 text-white text-center py-20">
+        <h1 class="text-4xl font-bold mb-4">Discover the Value of Your Website Traffic</h1>
+        <p class="text-lg">Analyze traffic trends and maximize your website’s earning potential.</p>
     </div>
-    <footer>
-        <p>&copy; 2025 Traffic vs. Earnings Insights</p>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">What This Page is About</h2>
+            <p class="text-lg">This page provides an in-depth analysis of traffic vs. earnings, helping you understand how to monetize your website effectively.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Benefits of This Research</h2>
+            <ul class="text-lg list-disc list-inside">
+                <li>Gain insights into traffic monetization strategies.</li>
+                <li>Understand potential earnings through ads, affiliates, and sponsorships.</li>
+                <li>Make informed decisions to optimize revenue streams.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Research Details -->
+    <section id="details" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6 text-center">Research Details & Breakdown</h2>
+            <table class="table-auto w-full border-collapse border border-gray-200">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="border border-gray-200 px-4 py-2">Traffic (Monthly)</th>
+                        <th class="border border-gray-200 px-4 py-2">Ad Earnings (CPM $3)</th>
+                        <th class="border border-gray-200 px-4 py-2">Affiliate Earnings</th>
+                        <th class="border border-gray-200 px-4 py-2">Sponsored Posts</th>
+                        <th class="border border-gray-200 px-4 py-2">Total Earnings Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-200 px-4 py-2">1,000</td>
+                        <td class="border border-gray-200 px-4 py-2">$3</td>
+                        <td class="border border-gray-200 px-4 py-2">$10–$50</td>
+                        <td class="border border-gray-200 px-4 py-2">$50–$100</td>
+                        <td class="border border-gray-200 px-4 py-2">$63–$153</td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                </tbody>
+            </table>
+            <p class="text-lg mt-6">Each column explains various revenue streams and traffic statistics to guide your monetization efforts.</p>
+        </div>
+    </section>
+
+    <!-- Attraction Section -->
+    <section class="py-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Why Choose This Research?</h2>
+            <div class="flex justify-center items-center gap-6">
+                <div class="w-1/3 text-center">
+                    <i class="fas fa-chart-line text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold">Actionable Insights</h3>
+                    <p>Make informed decisions with clear traffic breakdowns.</p>
+                </div>
+                <div class="w-1/3 text-center">
+                    <i class="fas fa-money-bill-wave text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold">Maximized Earnings</h3>
+                    <p>Learn strategies to boost your website’s income.</p>
+                </div>
+                <div class="w-1/3 text-center">
+                    <i class="fas fa-users text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold">Trusted Expertise</h3>
+                    <p>Get data-backed results from thorough research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Traffic Earnings Analysis. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
