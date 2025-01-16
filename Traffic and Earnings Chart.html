@@ -253,7 +253,7 @@
         </div>
     </section>
 
-   <!-- Traffic & Earnings Calculator Section -->
+  <!-- Traffic & Earnings Calculator Section -->
 <section id="calculator" class="py-16 bg-light-gray">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Estimate Your Earnings</h2>
@@ -263,22 +263,25 @@
             <!-- Monthly Traffic Input -->
             <div>
                 <label for="traffic" class="text-lg text-gray-600">Monthly Traffic:</label>
-                <input type="number" id="traffic" name="traffic" placeholder="Enter monthly visitors" 
+                <input type="number" id="traffic" name="traffic" placeholder="Enter monthly visitors (e.g., 10,000)" 
                     class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
+                <p class="text-sm text-gray-400">Example: 10,000 monthly visitors</p>
             </div>
             
             <!-- Ad Revenue per 1000 Visitors Input -->
             <div>
                 <label for="ad-revenue" class="text-lg text-gray-600">Ad Revenue per 1000 Visitors:</label>
-                <input type="number" id="ad-revenue" name="ad-revenue" placeholder="Enter ad revenue per 1000 visitors"
+                <input type="number" id="ad-revenue" name="ad-revenue" placeholder="Enter ad revenue per 1000 visitors (e.g., 5)" 
                     class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
+                <p class="text-sm text-gray-400">Example: $5 per 1000 visitors</p>
             </div>
             
             <!-- Affiliate Revenue per 1000 Visitors Input -->
             <div>
                 <label for="affiliate-revenue" class="text-lg text-gray-600">Affiliate Revenue per 1000 Visitors:</label>
-                <input type="number" id="affiliate-revenue" name="affiliate-revenue" placeholder="Enter affiliate revenue per 1000 visitors"
+                <input type="number" id="affiliate-revenue" name="affiliate-revenue" placeholder="Enter affiliate revenue per 1000 visitors (e.g., 2)" 
                     class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
+                <p class="text-sm text-gray-400">Example: $2 per 1000 visitors</p>
             </div>
             
             <button type="submit" class="cta-button bg-amber-500 text-white py-3 px-6 rounded-full mt-4">Calculate Earnings</button>
@@ -287,7 +290,7 @@
         <!-- Results Section (Hidden by default) -->
         <div id="calculator-result" class="mt-8 hidden">
             <h3 class="text-xl text-amber-500">Estimated Earnings:</h3>
-            <p class="text-lg text-gray-700" id="estimated-earnings"></p>
+            <p class="text-lg text-gray-900" id="estimated-earnings"></p>
         </div>
     </div>
 </section>
@@ -321,6 +324,7 @@
         resultElement.classList.remove("hidden");
     });
 </script>
+
 
 
     <!-- Expert Tips Section -->
