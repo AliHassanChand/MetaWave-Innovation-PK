@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic vs. Earnings</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .table-header {
+            background-color: #1E3A8A;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto py-8 px-4">
+        <h1 class="text-3xl font-bold text-center text-blue-900 mb-6">Traffic vs. Earnings</h1>
+        <p class="text-center text-gray-700 mb-10">A detailed breakdown of traffic and potential earnings based on different revenue streams.</p>
+        
+        <div class="overflow-x-auto">
+            <table class="min-w-full table-auto border-collapse border border-gray-200">
+                <thead>
+                    <tr class="table-header">
+                        <th class="py-3 px-6 text-left">Traffic (Monthly)</th>
+                        <th class="py-3 px-6 text-left">Ad Earnings (CPM $3)</th>
+                        <th class="py-3 px-6 text-left">Affiliate Earnings (Est.)</th>
+                        <th class="py-3 px-6 text-left">Sponsored Posts (Est.)</th>
+                        <th class="py-3 px-6 text-left">Total Earnings Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b">
+                        <td class="py-4 px-6">1,000</td>
+                        <td class="py-4 px-6">$3</td>
+                        <td class="py-4 px-6">$10–$50</td>
+                        <td class="py-4 px-6">$50–$100</td>
+                        <td class="py-4 px-6">$63–$153</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b">
+                        <td class="py-4 px-6">5,000</td>
+                        <td class="py-4 px-6">$15</td>
+                        <td class="py-4 px-6">$50–$200</td>
+                        <td class="py-4 px-6">$100–$300</td>
+                        <td class="py-4 px-6">$165–$515</td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                        <td class="py-4 px-6">10,000</td>
+                        <td class="py-4 px-6">$30</td>
+                        <td class="py-4 px-6">$100–$300</td>
+                        <td class="py-4 px-6">$200–$500</td>
+                        <td class="py-4 px-6">$330–$830</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b">
+                        <td class="py-4 px-6">50,000</td>
+                        <td class="py-4 px-6">$150</td>
+                        <td class="py-4 px-6">$500–$1,000</td>
+                        <td class="py-4 px-6">$500–$2,000</td>
+                        <td class="py-4 px-6">$1,150–$3,150</td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                        <td class="py-4 px-6">100,000</td>
+                        <td class="py-4 px-6">$300–$1,000</td>
+                        <td class="py-4 px-6">$1,000–$3,000</td>
+                        <td class="py-4 px-6">$2,000–$5,000</td>
+                        <td class="py-4 px-6">$3,300–$9,000</td>
+                    </tr>
+                    <tr class="bg-gray-50 border-b">
+                        <td class="py-4 px-6">500,000</td>
+                        <td class="py-4 px-6">$1,500–$5,000</td>
+                        <td class="py-4 px-6">$5,000–$15,000</td>
+                        <td class="py-4 px-6">$10,000–$25,000</td>
+                        <td class="py-4 px-6">$16,500–$45,000</td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                        <td class="py-4 px-6">1,000,000</td>
+                        <td class="py-4 px-6">$3,000–$10,000</td>
+                        <td class="py-4 px-6">$10,000–$30,000</td>
+                        <td class="py-4 px-6">$20,000–$50,000</td>
+                        <td class="py-4 px-6">$33,000–$90,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
