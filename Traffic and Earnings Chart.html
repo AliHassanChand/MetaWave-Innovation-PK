@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traffic vs. Earnings Analysis</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-oWAS6HBQwt1cxPHDxMxMGs65wFMI4XIpylmlh7uM2WpMoc60tDZjhbEz9JlfVY8LgXNBff66soXDC3QUyHz2MA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .hidden-element {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease-in-out;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
     <!-- Navigation -->
@@ -21,13 +33,13 @@
     </nav>
 
     <!-- Full-Width Banner -->
-    <div class="bg-blue-500 text-white text-center py-20">
+    <div class="bg-blue-500 text-white text-center py-20 hidden-element">
         <h1 class="text-4xl font-bold mb-4">Discover the Value of Your Website Traffic</h1>
         <p class="text-lg">Analyze traffic trends and maximize your website’s earning potential.</p>
     </div>
 
     <!-- Overview Section -->
-    <section id="overview" class="py-12 bg-white">
+    <section id="overview" class="py-12 bg-white hidden-element">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">What This Page is About</h2>
             <p class="text-lg">This page provides an in-depth analysis of traffic vs. earnings, helping you understand how to monetize your website effectively.</p>
@@ -35,7 +47,7 @@
     </section>
 
     <!-- Benefits Section -->
-    <section id="benefits" class="py-12 bg-gray-50">
+    <section id="benefits" class="py-12 bg-gray-50 hidden-element">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">Benefits of This Research</h2>
             <ul class="text-lg list-disc list-inside">
@@ -47,7 +59,7 @@
     </section>
 
     <!-- Research Details -->
-    <section id="details" class="py-12 bg-white">
+    <section id="details" class="py-12 bg-white hidden-element">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-6 text-center">Research Details & Breakdown</h2>
             <table class="table-auto w-full border-collapse border border-gray-200">
@@ -68,7 +80,6 @@
                         <td class="border border-gray-200 px-4 py-2">$50–$100</td>
                         <td class="border border-gray-200 px-4 py-2">$63–$153</td>
                     </tr>
-                    <!-- Additional rows as needed -->
                 </tbody>
             </table>
             <p class="text-lg mt-6">Each column explains various revenue streams and traffic statistics to guide your monetization efforts.</p>
@@ -76,7 +87,7 @@
     </section>
 
     <!-- Attraction Section -->
-    <section class="py-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <section class="py-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white hidden-element">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">Why Choose This Research?</h2>
             <div class="flex justify-center items-center gap-6">
@@ -105,5 +116,23 @@
             <p>&copy; 2025 Traffic Earnings Analysis. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hiddenElements = document.querySelectorAll('.hidden-element');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            hiddenElements.forEach(element => observer.observe(element));
+        });
+    </script>
 </body>
 </html>
