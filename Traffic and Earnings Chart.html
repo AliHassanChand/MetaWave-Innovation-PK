@@ -7,6 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-oWAS6HBQwt1cxPHDxMxMGs65wFMI4XIpylmlh7uM2WpMoc60tDZjhbEz9JlfVY8LgXNBff66soXDC3QUyHz2MA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #2a2a2a; /* Dark background */
+            color: #e0e0e0; /* Light text color for contrast */
+        }
         .hidden-element {
             opacity: 0;
             transform: translateY(30px);
@@ -16,41 +22,147 @@
             transform: translateY(0);
             transition: all 0.8s ease-in-out;
         }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1f1f1f; /* Dark background */
+            border-bottom: 1px solid #444; /* Subtle border */
+        }
+        nav a {
+            color: #e0e0e0; /* Light text */
+            font-size: 16px;
+            font-weight: 500;
+            padding: 14px 24px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #ffac33; /* Warm gold accent */
+        }
+
+        /* Section Titles */
+        h1, h2, h3 {
+            color: #ffac33; /* Warm gold for headings */
+            font-weight: 700;
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #444; /* Dark border */
+        }
+        th {
+            background-color: #333; /* Dark header */
+            color: #ffac33; /* Warm gold text */
+        }
+        td {
+            background-color: #2a2a2a; /* Dark background for cells */
+            color: #e0e0e0; /* Light text */
+        }
+        tr:nth-child(even) {
+            background-color: #1f1f1f; /* Alternating dark rows */
+        }
+
+        /* Explanation Section */
+        .explanation {
+            background-color: #333; /* Dark background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .explanation p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #dcdcdc; /* Light gray for explanation text */
+        }
+
+        /* Call to Action Buttons */
+        .cta-button {
+            background-color: #ffac33; /* Warm gold */
+            color: #1f1f1f; /* Dark text */
+            padding: 14px 28px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #cc7a1a; /* Darker gold on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f; /* Dark footer */
+            color: #dcdcdc; /* Light gray text */
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            background-color: #1f1f1f; /* Dark background */
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid #444; /* Subtle dark border */
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #ffac33; /* Gold text */
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            color: #dcdcdc; /* Light gray for subtext */
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-dark">
+
     <!-- Navigation -->
-    <nav class="bg-blue-600 text-white py-4">
+    <nav class="py-4">
         <div class="container mx-auto flex justify-between items-center px-6">
             <a href="#" class="text-2xl font-bold">Traffic Earnings</a>
             <div>
-                <a href="#overview" class="px-4 hover:underline">Overview</a>
-                <a href="#benefits" class="px-4 hover:underline">Benefits</a>
-                <a href="#details" class="px-4 hover:underline">Details</a>
-                <a href="#contact" class="px-4 hover:underline">Contact</a>
+                <a href="#overview" class="px-4">Overview</a>
+                <a href="#benefits" class="px-4">Benefits</a>
+                <a href="#details" class="px-4">Details</a>
+                <a href="#contact" class="px-4">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Full-Width Banner -->
-    <div class="bg-blue-500 text-white text-center py-20 hidden-element">
-        <h1 class="text-4xl font-bold mb-4">Discover the Value of Your Website Traffic</h1>
-        <p class="text-lg">Analyze traffic trends and maximize your website’s earning potential.</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section hidden-element">
+        <h1>Maximize Your Earnings with Website Traffic</h1>
+        <p>Discover how different traffic levels impact your website's earning potential through ads, affiliate links, and sponsored posts.</p>
+        <a href="#details" class="cta-button">Get Started</a>
+    </section>
 
     <!-- Overview Section -->
-    <section id="overview" class="py-12 bg-white hidden-element">
+    <section id="overview" class="py-12 bg-dark hidden-element">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">What This Page is About</h2>
-            <p class="text-lg">This page provides an in-depth analysis of traffic vs. earnings, helping you understand how to monetize your website effectively.</p>
+            <p class="text-lg text-gray-400">This page provides an in-depth analysis of traffic vs. earnings, helping you understand how to monetize your website effectively.</p>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section id="benefits" class="py-12 bg-gray-50 hidden-element">
+    <section id="benefits" class="py-12 bg-dark hidden-element">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">Benefits of This Research</h2>
-            <ul class="text-lg list-disc list-inside">
+            <ul class="text-lg list-disc list-inside text-gray-400">
                 <li>Gain insights into traffic monetization strategies.</li>
                 <li>Understand potential earnings through ads, affiliates, and sponsorships.</li>
                 <li>Make informed decisions to optimize revenue streams.</li>
@@ -58,80 +170,97 @@
         </div>
     </section>
 
-    <!-- Research Details -->
-    <section id="details" class="py-12 bg-white hidden-element">
+    <!-- Traffic vs Earnings Table -->
+    <section id="details" class="py-12 bg-dark hidden-element">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6 text-center">Research Details & Breakdown</h2>
-            <table class="table-auto w-full border-collapse border border-gray-200">
-                <thead class="bg-gray-100">
-                    <tr>
-                        <th class="border border-gray-200 px-4 py-2">Traffic (Monthly)</th>
-                        <th class="border border-gray-200 px-4 py-2">Ad Earnings (CPM $3)</th>
-                        <th class="border border-gray-200 px-4 py-2">Affiliate Earnings</th>
-                        <th class="border border-gray-200 px-4 py-2">Sponsored Posts</th>
-                        <th class="border border-gray-200 px-4 py-2">Total Earnings Range</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border border-gray-200 px-4 py-2">1,000</td>
-                        <td class="border border-gray-200 px-4 py-2">$3</td>
-                        <td class="border border-gray-200 px-4 py-2">$10–$50</td>
-                        <td class="border border-gray-200 px-4 py-2">$50–$100</td>
-                        <td class="border border-gray-200 px-4 py-2">$63–$153</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="text-lg mt-6">Each column explains various revenue streams and traffic statistics to guide your monetization efforts.</p>
-        </div>
-    </section>
-
-    <!-- Attraction Section -->
-    <section class="py-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white hidden-element">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">Why Choose This Research?</h2>
-            <div class="flex justify-center items-center gap-6">
-                <div class="w-1/3 text-center">
-                    <i class="fas fa-chart-line text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold">Actionable Insights</h3>
-                    <p>Make informed decisions with clear traffic breakdowns.</p>
-                </div>
-                <div class="w-1/3 text-center">
-                    <i class="fas fa-money-bill-wave text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold">Maximized Earnings</h3>
-                    <p>Learn strategies to boost your website’s income.</p>
-                </div>
-                <div class="w-1/3 text-center">
-                    <i class="fas fa-users text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold">Trusted Expertise</h3>
-                    <p>Get data-backed results from thorough research.</p>
-                </div>
+            <h2 class="text-3xl font-bold mb-6 text-center text-amber-500">Traffic vs Earnings Analysis</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Traffic (Monthly)</th>
+                            <th>Ad Earnings (CPM $3)</th>
+                            <th>Affiliate Earnings (Est.)</th>
+                            <th>Sponsored Posts (Est.)</th>
+                            <th>Total Earnings Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1,000</td>
+                            <td>$3</td>
+                            <td>$10–$50</td>
+                            <td>$50–$100</td>
+                            <td>$63–$153</td>
+                        </tr>
+                        <tr>
+                            <td>5,000</td>
+                            <td>$15</td>
+                            <td>$50–$200</td>
+                            <td>$100–$300</td>
+                            <td>$165–$515</td>
+                        </tr>
+                        <tr>
+                            <td>10,000</td>
+                            <td>$30</td>
+                            <td>$100–$300</td>
+                            <td>$200–$500</td>
+                            <td>$330–$830</td>
+                        </tr>
+                        <tr>
+                            <td>50,000</td>
+                            <td>$150</td>
+                            <td>$500–$1,000</td>
+                            <td>$500–$2,000</td>
+                            <td>$1,150–$3,150</td>
+                        </tr>
+                        <tr>
+                            <td>100,000</td>
+                            <td>$300–$1,000</td>
+                            <td>$1,000–$3,000</td>
+                            <td>$2,000–$5,000</td>
+                            <td>$3,300–$9,000</td>
+                        </tr>
+                        <tr>
+                            <td>500,000</td>
+                            <td>$1,500–$5,000</td>
+                            <td>$5,000–$10,000</td>
+                            <td>$10,000–$25,000</td>
+                            <td>$16,500–$40,000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Traffic Earnings Analysis. All Rights Reserved.</p>
-        </div>
+    <!-- Explanation Section -->
+    <section class="explanation">
+        <h3 class="text-2xl font-bold mb-4 text-amber-500">Explanation of Data</h3>
+        <p><strong>Traffic (Monthly):</strong> The number of unique visitors your website receives each month.</p>
+        <p><strong>Ad Earnings (CPM $3):</strong> Revenue generated from ads, based on a $3 cost per 1,000 impressions.</p>
+        <p><strong>Affiliate Earnings (Est.):</strong> Income earned through affiliate links when visitors purchase products or services.</p>
+        <p><strong>Sponsored Posts (Est.):</strong> Payments received for publishing promotional content on your website.</p>
+        <p><strong>Total Earnings Range:</strong> The combined revenue from ads, affiliate sales, and sponsored posts.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6">
+        <p class="text-sm text-center text-gray-600">© 2025 Traffic Earnings. All rights reserved.</p>
     </footer>
 
+    <!-- Scroll Animation Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener("DOMContentLoaded", function () {
             const hiddenElements = document.querySelectorAll('.hidden-element');
-
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('fade-in');
                     }
                 });
-            }, {
-                threshold: 0.1
             });
-
-            hiddenElements.forEach(element => observer.observe(element));
+            hiddenElements.forEach(el => observer.observe(el));
         });
     </script>
 </body>
