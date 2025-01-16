@@ -253,39 +253,74 @@
         </div>
     </section>
 
-    <!-- Traffic & Earnings Calculator Section -->
-    <section id="calculator" class="py-16 bg-light-gray">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Estimate Your Earnings</h2>
-            <p class="text-lg text-gray-400 mb-8">Use this calculator to estimate your potential earnings based on your
-                website's traffic and monetization strategies.</p>
-            <form id="calculator-form" class="space-y-6">
-                <div>
-                    <label for="traffic" class="text-lg text-gray-400">Monthly Traffic:</label>
-                    <input type="number" id="traffic" name="traffic" placeholder="Enter monthly visitors"
-                        class="w-full p-3 border border-gray-300 rounded" required>
-                </div>
-                <div>
-                    <label for="ad-revenue" class="text-lg text-gray-400">Ad Revenue per 1000 Visitors:</label>
-                    <input type="number" id="ad-revenue" name="ad-revenue"
-                        placeholder="Enter ad revenue per 1000 visitors"
-                        class="w-full p-3 border border-gray-300 rounded" required>
-                </div>
-                <div>
-                    <label for="affiliate-revenue" class="text-lg text-gray-400">Affiliate Revenue per 1000
-                        Visitors:</label>
-                    <input type="number" id="affiliate-revenue" name="affiliate-revenue"
-                        placeholder="Enter affiliate revenue per 1000 visitors"
-                        class="w-full p-3 border border-gray-300 rounded" required>
-                </div>
-                <button type="submit" class="cta-button">Calculate Earnings</button>
-            </form>
-            <div id="calculator-result" class="mt-8 hidden">
-                <h3 class="text-xl text-amber-500">Estimated Earnings:</h3>
-                <p class="text-lg text-gray-400" id="estimated-earnings"></p>
+   <!-- Traffic & Earnings Calculator Section -->
+<section id="calculator" class="py-16 bg-light-gray">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Estimate Your Earnings</h2>
+        <p class="text-lg text-gray-500 mb-8">Use this calculator to estimate your potential earnings based on your website's monthly traffic and monetization strategies. Simply enter the details below to calculate.</p>
+        
+        <form id="calculator-form" class="space-y-6">
+            <!-- Monthly Traffic Input -->
+            <div>
+                <label for="traffic" class="text-lg text-gray-600">Monthly Traffic:</label>
+                <input type="number" id="traffic" name="traffic" placeholder="Enter monthly visitors" 
+                    class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
             </div>
+            
+            <!-- Ad Revenue per 1000 Visitors Input -->
+            <div>
+                <label for="ad-revenue" class="text-lg text-gray-600">Ad Revenue per 1000 Visitors:</label>
+                <input type="number" id="ad-revenue" name="ad-revenue" placeholder="Enter ad revenue per 1000 visitors"
+                    class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
+            </div>
+            
+            <!-- Affiliate Revenue per 1000 Visitors Input -->
+            <div>
+                <label for="affiliate-revenue" class="text-lg text-gray-600">Affiliate Revenue per 1000 Visitors:</label>
+                <input type="number" id="affiliate-revenue" name="affiliate-revenue" placeholder="Enter affiliate revenue per 1000 visitors"
+                    class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
+            </div>
+            
+            <button type="submit" class="cta-button bg-amber-500 text-white py-3 px-6 rounded-full mt-4">Calculate Earnings</button>
+        </form>
+        
+        <!-- Results Section (Hidden by default) -->
+        <div id="calculator-result" class="mt-8 hidden">
+            <h3 class="text-xl text-amber-500">Estimated Earnings:</h3>
+            <p class="text-lg text-gray-700" id="estimated-earnings"></p>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    // Handle form submission without page refresh
+    document.getElementById("calculator-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page refresh
+        
+        // Get input values
+        const traffic = parseFloat(document.getElementById("traffic").value);
+        const adRevenue = parseFloat(document.getElementById("ad-revenue").value);
+        const affiliateRevenue = parseFloat(document.getElementById("affiliate-revenue").value);
+        
+        // Validate inputs
+        if (isNaN(traffic) || isNaN(adRevenue) || isNaN(affiliateRevenue)) {
+            alert("Please enter valid numbers.");
+            return;
+        }
+        
+        // Calculate earnings
+        const totalAdRevenue = (traffic / 1000) * adRevenue;
+        const totalAffiliateRevenue = (traffic / 1000) * affiliateRevenue;
+        const totalEarnings = totalAdRevenue + totalAffiliateRevenue;
+        
+        // Display results
+        const resultElement = document.getElementById("calculator-result");
+        const earningsText = `With ${traffic} monthly visitors, you can expect to earn approximately $${totalEarnings.toFixed(2)} per month.`;
+        
+        document.getElementById("estimated-earnings").textContent = earningsText;
+        resultElement.classList.remove("hidden");
+    });
+</script>
 
 
     <!-- Expert Tips Section -->
