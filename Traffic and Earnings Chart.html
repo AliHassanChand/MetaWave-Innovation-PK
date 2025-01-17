@@ -116,21 +116,10 @@
             /* Light gray for explanation text */
         }
 
-        /* Call to Action Buttons */
-        .cta-button {
-            background-color: #ffac33;
-            /* Warm gold */
-            color: #1f1f1f;
-            /* Dark text */
-            padding: 14px 28px;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
+
 
         .cta-button:hover {
+            width: 90% !important;
             background-color: #cc7a1a;
             /* Darker gold on hover */
         }
@@ -148,12 +137,16 @@
 
         /* Hero Section Styling */
         .hero-section {
-            background-color: #1f1f1f;
             /* Dark background */
             text-align: center;
             padding: 80px 20px;
             border-bottom: 1px solid #444;
             /* Subtle dark border */
+        }
+
+        .shadedark {
+            background-color: #1f1f1f;
+
         }
 
         .hero-section h1 {
@@ -177,7 +170,7 @@
     <!-- Navigation -->
     <nav class="py-4">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <a href="#" class="text-2xl font-bold">Traffic Earnings</a>
+            <a href="#" class="text-2xl font-bold">Web Traffic Earnings</a>
             <div>
                 <a href="#overview" class="px-4">Overview</a>
                 <a href="#benefits" class="px-4">Benefits</a>
@@ -188,15 +181,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section hidden-element">
-        <h1>Maximize Your Earnings with Website Traffic</h1>
+    <section class="hero-section hidden-element shadedark" id="0">
+        <h1 class="text-4xl font-extrabold text-amber-500 mb-6">Maximize Your Earnings with Website Traffic</h1>
         <p>Discover how different traffic levels impact your website's earning potential through ads, affiliate links,
             and sponsored posts.</p>
-        <a href="#details" class="cta-button">Get Started</a>
+        <a href="#details"
+            class="bg-gradient-to-r from-amber-500 to-amber-700 text-white rounded-full p-4 shadow-lg hover:bg-gradient-to-r hover:from-amber-450 hover:to-amber-700 transition-all focus:outline-none flex items-center justify-center transform scale-95 hover:scale-100">Get
+            Started</a>
     </section>
 
     <!-- Overview Section -->
-    <section id="overview" class="py-16 bg-dark text-white hidden-element">
+    <section class="py-16 bg-dark text-white hidden-element" id="1">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Unlock the Secrets to Boosting Your Earnings</h2>
             <p class="text-lg text-gray-400 mb-8">Wondering how website traffic can unlock new revenue streams? This
@@ -207,19 +202,19 @@
                 data, and expert tips to help you monetize your site efficiently. Whether you’re a beginner or looking
                 to scale, this guide will help you make smarter, data-driven decisions for long-term growth.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Real-World Data You Can Trust</h3>
-                    <p class="text-gray-400">We break down the latest stats and traffic insights so you can make
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Real-World Data You Can Trust</h3>
+                    <p class="text-gray-200">We break down the latest stats and traffic insights so you can make
                         informed choices that boost your revenue.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Proven Strategies for Scaling</h3>
-                    <p class="text-gray-400">Unlock methods that have worked for top-performing websites to help you
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Proven Strategies for Scaling</h3>
+                    <p class="text-gray-200">Unlock methods that have worked for top-performing websites to help you
                         scale your traffic and earnings quickly.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Effortless Monetization</h3>
-                    <p class="text-gray-400">Learn the easiest ways to monetize your site, from ads to affiliate links,
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Effortless Monetization</h3>
+                    <p class="text-gray-200">Learn the easiest ways to monetize your site, from ads to affiliate links,
                         without a steep learning curve.</p>
                 </div>
             </div>
@@ -228,123 +223,86 @@
 
 
     <!-- Success Stories Section -->
-    <section id="success-stories" class="py-16 bg-gray-900 text-white">
+    <section class="py-16 text-white shadedark" id="2">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Real Success Stories</h2>
             <p class="text-lg text-gray-400 mb-8">See how others have turned their website traffic into a reliable
                 revenue stream.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">John's E-commerce Success</h3>
-                    <p class="text-gray-400">John's site went from 1,000 to 100,000 monthly visitors in just 6 months,
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">John's E-commerce Success</h3>
+                    <p class="text-gray-200">John's site went from 1,000 to 100,000 monthly visitors in just 6 months,
                         with earnings increasing by 400% using targeted affiliate marketing and SEO strategies.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Sarah's Blog Monetization</h3>
-                    <p class="text-gray-400">Sarah saw a 250% increase in ad revenue after implementing a new content
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Sarah's Blog Monetization</h3>
+                    <p class="text-gray-200">Sarah saw a 250% increase in ad revenue after implementing a new content
                         strategy and optimizing her site for better traffic engagement.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Mark's Affiliate Marketing Journey</h3>
-                    <p class="text-gray-400">Mark turned his blog into a profitable business by leveraging affiliate
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Mark's Affiliate Marketing Journey</h3>
+                    <p class="text-gray-200">Mark turned his blog into a profitable business by leveraging affiliate
                         links, resulting in consistent passive income even while sleeping!</p>
                 </div>
             </div>
         </div>
     </section>
 
-  <!-- Traffic & Earnings Calculator Section -->
-<section id="calculator" class="py-16 bg-light-gray">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Estimate Your Earnings</h2>
-        <p class="text-lg text-gray-500 mb-8">Use this calculator to estimate your potential earnings based on your website's monthly traffic and monetization strategies. Simply enter the details below to calculate.</p>
-        
-        <form id="calculator-form" class="space-y-6">
-            <!-- Monthly Traffic Input -->
-            <div>
-                <label for="traffic" class="text-lg text-gray-600">Monthly Traffic:</label>
-                <input type="number" id="traffic" name="traffic" placeholder="Enter monthly visitors (e.g., 10,000)" 
-                    class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
-               
+    <!-- Traffic & Earnings Calculator Section -->
+    <section class="py-16 bg-dark" id="calculator" id="3">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Estimate Your Earnings</h2>
+            <p class="text-lg text-gray-400 mb-8">Use this calculator to estimate your potential earnings based on your
+                website's traffic and monetization strategies.</p>
+            <form id="calculator-form" class="space-y-6">
+                <div>
+                    <label for="traffic" class="text-lg text-gray-400">Monthly Traffic:</label>
+                    <input type="number" id="traffic" name="traffic" placeholder="Enter monthly visitors"
+                        class="w-full p-3 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="ad-revenue" class="text-lg text-gray-400">Ad Revenue per 1000 Visitors:</label>
+                    <input type="number" id="ad-revenue" name="ad-revenue"
+                        placeholder="Enter ad revenue per 1000 visitors"
+                        class="w-full p-3 border border-gray-300 rounded" required>
+                </div>
+                <div>
+                    <label for="affiliate-revenue" class="text-lg text-gray-400">Affiliate Revenue per 1000
+                        Visitors:</label>
+                    <input type="number" id="affiliate-revenue" name="affiliate-revenue"
+                        placeholder="Enter affiliate revenue per 1000 visitors"
+                        class="w-full p-3 border border-gray-300 rounded" required>
+                </div>
+                <button type="submit"
+                    class="bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-full p-4 shadow-lg hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-600 transition-all focus:outline-none flex items-center justify-center transform hover:scale-105">Calculate
+                    Earnings</button>
+            </form>
+            <div id="calculator-result" class="mt-8 hidden">
+                <h3 class="text-xl text-amber-500">Estimated Earnings:</h3>
+                <p class="text-lg text-gray-400" id="estimated-earnings"></p>
             </div>
-            
-            <!-- Ad Revenue per 1000 Visitors Input -->
-            <div>
-                <label for="ad-revenue" class="text-lg text-gray-600">Ad Revenue per 1000 Visitors:</label>
-                <input type="number" id="ad-revenue" name="ad-revenue" placeholder="Enter ad revenue per 1000 visitors (e.g., 5)" 
-                    class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
-                
-            </div>
-            
-            <!-- Affiliate Revenue per 1000 Visitors Input -->
-            <div>
-                <label for="affiliate-revenue" class="text-lg text-gray-600">Affiliate Revenue per 1000 Visitors:</label>
-                <input type="number" id="affiliate-revenue" name="affiliate-revenue" placeholder="Enter affiliate revenue per 1000 visitors (e.g., 2)" 
-                    class="w-full p-3 border border-gray-300 rounded text-gray-700" required>
-               
-            </div>
-            
-            <button type="submit" class="cta-button bg-amber-500 text-white py-3 px-6 rounded-full mt-4">Calculate Earnings</button>
-        </form>
-        
-        <!-- Results Section (Hidden by default) -->
-        <div id="calculator-result" class="mt-8 hidden">
-            <h3 class="text-xl text-amber-500">Estimated Earnings:</h3>
-            <p class="text-lg text-white" id="estimated-earnings"></p>
         </div>
-    </div>
-</section>
-
-<script>
-    // Handle form submission without page refresh
-    document.getElementById("calculator-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent page refresh
-        
-        // Get input values
-        const traffic = parseFloat(document.getElementById("traffic").value);
-        const adRevenue = parseFloat(document.getElementById("ad-revenue").value);
-        const affiliateRevenue = parseFloat(document.getElementById("affiliate-revenue").value);
-        
-        // Validate inputs
-        if (isNaN(traffic) || isNaN(adRevenue) || isNaN(affiliateRevenue)) {
-            alert("Please enter valid numbers.");
-            return;
-        }
-        
-        // Calculate earnings
-        const totalAdRevenue = (traffic / 1000) * adRevenue;
-        const totalAffiliateRevenue = (traffic / 1000) * affiliateRevenue;
-        const totalEarnings = totalAdRevenue + totalAffiliateRevenue;
-        
-        // Display results
-        const resultElement = document.getElementById("calculator-result");
-        const earningsText = `With ${traffic} monthly visitors, you can expect to earn approximately $${totalEarnings.toFixed(2)} per month.`;
-        
-        document.getElementById("estimated-earnings").textContent = earningsText;
-        resultElement.classList.remove("hidden");
-    });
-</script>
-
+    </section>
 
 
     <!-- Expert Tips Section -->
-    <section id="expert-tips" class="py-16 bg-dark text-white">
+    <section class="py-16 shadedark text-white" id="4">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Expert Tips to Maximize Earnings</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Optimize Your Ads</h3>
-                    <p class="text-gray-400">Experiment with ad placement, targeting, and frequency to ensure you're
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Optimize Your Ads</h3>
+                    <p class="text-gray-200">Experiment with ad placement, targeting, and frequency to ensure you're
                         getting the most revenue per visitor.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Leverage Seasonal Traffic</h3>
-                    <p class="text-gray-400">Adjust your monetization strategy based on seasonal traffic spikes, like
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Leverage Seasonal Traffic</h3>
+                    <p class="text-gray-200">Adjust your monetization strategy based on seasonal traffic spikes, like
                         holidays or special events.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-amber-500 mb-4">Engage Your Audience</h3>
-                    <p class="text-gray-400">Create content that resonates with your audience and keeps them coming
+                <div class="p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-extrabold text-black  mb-4">Engage Your Audience</h3>
+                    <p class="text-gray-200">Create content that resonates with your audience and keeps them coming
                         back, increasing engagement and revenue opportunities.</p>
                 </div>
             </div>
@@ -353,19 +311,19 @@
 
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-light-gray">
+    <section class="py-16 bg-dark" id="5">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-extrabold text-amber-500 mb-8">What Others Are Saying</h2>
             <div class="flex justify-center space-x-6">
-                <div class="w-1/3 p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <p class="text-lg text-gray-400">"This research transformed how I monetize my blog! The strategies
+                <div class="w-1/3 p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <p class="text-lg text-gray-200">"This research transformed how I monetize my blog! The strategies
                         work, and my ad revenue has tripled."</p>
-                    <span class="text-amber-500">- Emma, Lifestyle Blogger</span>
+                    <span class="text-amber-300">- Emma, Lifestyle Blogger</span>
                 </div>
-                <div class="w-1/3 p-6 bg-gray-800 rounded-lg shadow-lg">
-                    <p class="text-lg text-gray-400">"I implemented a few changes based on this research, and my
+                <div class="w-1/3 p-6 bg-amber-600 rounded-lg shadow-lg">
+                    <p class="text-lg text-gray-200">"I implemented a few changes based on this research, and my
                         affiliate income has been skyrocketing."</p>
-                    <span class="text-amber-500">- John, E-commerce Store Owner</span>
+                    <span class="text-amber-300">- John, E-commerce Store Owner</span>
                 </div>
             </div>
         </div>
@@ -373,35 +331,37 @@
 
 
     <!-- Call to Action Section -->
-    <section id="cta" class="py-16 bg-amber-500 text-center text-white">
+    <section class="py-16 shadedark text-center text-white" id="6">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-extrabold mb-4" style="color:darkslategrey !important;">Ready to Take Your Earnings to the Next Level?</h2>
+            <h2 class="text-4xl text-amber-500 font-extrabold mb-4">Ready to Take Your Earnings to the Next Level?</h2>
             <p class="text-lg mb-6">Get personalized insights and a step-by-step guide to optimize your site’s
                 monetization strategy.</p>
-            <a href="#contact" class="cta-button">Get Started Now</a>
+            <a href="#contact"
+                class="bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-full p-4 shadow-lg hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-600 transition-all focus:outline-none flex items-center justify-center transform hover:scale-105">Get
+                Started Now</a>
         </div>
     </section>
 
 
     <!-- Newsletter Signup Section -->
-    <section id="newsletter" class="py-16 bg-gray-900 text-white">
+    <section class="py-16 bg-dark text-white" id="7">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Stay Ahead with the Latest Monetization Tips</h2>
             <p class="text-lg text-gray-400 mb-8">Sign up for our newsletter to receive exclusive updates, expert tips,
                 and proven strategies directly to your inbox.</p>
             <form class="flex justify-center space-x-4">
                 <input type="email" placeholder="Enter your email" class="p-3 w-80 rounded" required>
-                <button type="submit" class="cta-button">Subscribe</button>
+                <button type="submit"
+                    class="bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-full p-4 shadow-lg hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-600 transition-all focus:outline-none flex items-center justify-center transform hover:scale-105">Subscribe</button>
             </form>
         </div>
     </section>
 
 
-
     <!-- Traffic vs Earnings Table -->
-    <section id="details" class="py-12 bg-dark hidden-element">
+    <section class="py-12 shadedark hidden-element" id="8">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6 text-center text-amber-500">Traffic vs Earnings Analysis</h2>
+            <h2 class="text-4xl underline font-bold text-amber-500 mb-6 text-center">Traffic vs Earnings Analysis</h2>
             <div class="table-container">
                 <table>
                     <thead>
@@ -464,9 +424,10 @@
 
 
     <!-- Benefits Section -->
-    <section id="benefits" class="py-16 bg-dark text-white hidden-element">
+    <section class="py-16 bg-dark text-white hidden-element" id="9">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-extrabold text-amber-500 mb-8">Why This Research Will Change the Way You Monetize
+            <h2 class="text-4xl underline font-bold text-amber-500 mb-6 text-center">Why This Research Will Change the
+                Way You Monetize
                 Your Site</h2>
             <p class="text-lg text-gray-400 mb-8">Want to turn your website into a consistent revenue machine? Our
                 research provides you with the tools and knowledge you need to maximize your site’s potential. This
@@ -493,9 +454,10 @@
 
 
     <!-- Explanation Section -->
-    <section class="explanation">
+    <section class="explanation shadedark" id="10">
         <div class="container mx-auto px-6">
-            <h3 class="text-2xl font-bold mb-4 text-center text-amber-500">Explanation of Data & How Traffic Affects
+            <h3 class="text-4xl underline font-bold text-amber-500 mb-6 text-center">Explanation of Data & How Traffic
+                Affects
                 Earnings</h3>
             <p><strong>Traffic (Monthly):</strong> The number of unique visitors your website receives each month. As
                 your traffic increases, the potential for earning from ads, affiliate marketing, and sponsored posts
@@ -519,9 +481,9 @@
 
 
     <!-- FAQ Section: Traffic Impact Analysis -->
-    <section id="faq" class="py-12 bg-dark text-white">
+    <section class="py-12 bg-dark text-white" id="11">
         <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold text-amber-500 mb-6">FAQ: Traffic Impact on Earnings</h3>
+            <h3 class="text-4xl underline font-bold text-amber-500 mb-6">FAQ: Traffic Impact on Earnings</h3>
 
             <div class="faq-item mb-6">
                 <h4 class="text-xl font-semibold text-amber-500">Why does traffic affect earnings?</h4>
@@ -594,9 +556,9 @@
 
 
     <!-- In-Depth Monetization Strategies Section -->
-    <section id="monetization-strategies" class="py-12 bg-dark text-white">
+    <section class="py-12 shadedark text-white" id="12">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-amber-500 mb-6">In-Depth Monetization Strategies</h2>
+            <h2 class="text-4xl underline font-bold text-amber-500 mb-6">In-Depth Monetization Strategies</h2>
 
             <!-- Google AdSense -->
             <div class="mb-8">
@@ -711,9 +673,9 @@
 
 
     <!-- Additional Tips Section -->
-    <section id="tips" class="py-12 bg-dark text-white">
+    <section class="py-12 bg-dark text-white" id="13">
         <div class="container mx-auto px-6">
-            <h3 class="text-2xl font-bold text-amber-500 mb-6">Additional Tips for Maximizing Earnings</h3>
+            <h3 class="text-4xl font-bold text-amber-500 mb-6 text-center">Additional Tips for Maximizing Earnings</h3>
             <ul class="list-disc pl-5">
                 <li><strong>Content Quality:</strong> High-quality, engaging content drives traffic and improves
                     monetization opportunities.</li>
@@ -731,9 +693,9 @@
 
 
     <!-- Conclusion Section -->
-    <section id="conclusion" class="py-12 bg-dark text-white">
+    <section class="py-12 shadedark text-white" id="14">
         <div class="container mx-auto px-6">
-            <h3 class="text-2xl font-bold text-amber-500 mb-6">Conclusion</h3>
+            <h3 class="text-4xl font-bold text-amber-500 mb-6 text-center">Conclusion</h3>
             <p>Monetizing a website successfully requires a strategic approach. By leveraging platforms like Google
                 AdSense, AdScene, Media.net, Amazon Associates, PropellerAds, and Ezoic, website owners can maximize
                 their earning potential. Each platform offers unique advantages, and the key to success lies in
@@ -743,12 +705,112 @@
     </section>
 
 
+    <!-- Go Down and Go Up Buttons -->
+    <div class="fixed bottom-8 right-8 flex flex-col gap-6 z-50">
+        <!-- Go Down Button -->
+        <button id="go-down"
+            class="bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full p-4 shadow-lg hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-500 transition-all focus:outline-none flex items-center justify-center transform hover:scale-105">
+            <span class="text-2xl mr-2">⬇️</span>
+            <span class="block text-black-500 font-semibold">Go Down</span>
+        </button>
+
+        <!-- Go Up Button -->
+        <button id="go-up"
+            class="bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-full p-4 shadow-lg hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-600 transition-all focus:outline-none flex items-center justify-center transform hover:scale-105 hidden">
+            <span class="text-2xl mr-2">⬆️</span>
+            <span class="block text-black-500 font-semibold">Go Up</span>
+        </button>
+    </div>
+
+    <!-- JavaScript to Handle Scroll -->
+    <script>
+        let currentSectionId = 0;  // Current section is at section 0
+        const totalSections = 14;  // Total number of sections (0 to 14)
+
+        // Get the buttons
+        const goDownButton = document.getElementById("go-down");
+        const goUpButton = document.getElementById("go-up");
+
+        let isScrolling = false;
+
+        // Function to scroll to a section by its ID, with a 100px offset
+        function scrollToSectionById(sectionId) {
+            if (isScrolling) return;  // Prevent multiple scroll actions
+            isScrolling = true;
+
+            const section = document.getElementById(`${sectionId}`);  // Assuming each section has an ID like 0, 1, etc.
+            if (!section) {
+                isScrolling = false;
+                return;
+            }
+
+            const sectionTop = section.offsetTop;  // The top position of the section
+
+            // Adding a 100px offset
+            const scrollTo = sectionTop - 100;  // Adjust this for a 100px gap from the top
+
+            window.scrollTo({
+                top: scrollTo,
+                behavior: "smooth"
+            });
+
+            setTimeout(() => {
+                isScrolling = false;
+            }, 1000);  // Adjust timeout duration to match the scroll speed
+        }
+
+        // When the Go Down button is clicked, scroll to the next section
+        goDownButton.addEventListener("click", function () {
+            if (currentSectionId < totalSections - 1) {  // Ensure it doesn't go beyond section 14
+                currentSectionId++;  // Move to the next section
+                scrollToSectionById(currentSectionId);
+                updateButtonVisibility();
+            }
+        });
+
+        // When the Go Up button is clicked, scroll to the previous section
+        goUpButton.addEventListener("click", function () {
+            if (currentSectionId > 0) {  // Ensure it doesn't go below section 0
+                currentSectionId--;  // Move to the previous section
+                scrollToSectionById(currentSectionId);
+                updateButtonVisibility();
+            }
+        });
+
+        // Update the Go Up and Go Down button visibility dynamically
+        function updateButtonVisibility() {
+            // Show/Hide Go Down Button based on the current section
+            if (currentSectionId === totalSections - 1) {
+                goDownButton.classList.add("hidden");
+            } else {
+                goDownButton.classList.remove("hidden");
+            }
+
+            // Show/Hide Go Up Button based on the current section
+            if (currentSectionId === 0) {
+                goUpButton.classList.add("hidden");
+            } else {
+                goUpButton.classList.remove("hidden");
+            }
+        }
+
+        // Initialize button visibility on page load
+        updateButtonVisibility();
+
+        // Ensure the page scrolls to the first section when the page is loaded
+        window.addEventListener('load', () => {
+            scrollToSectionById(currentSectionId);
+        });
+    </script>
+
+
+
     <!-- Footer Section -->
-    <footer class="py-6">
-        <p class="text-sm text-center text-gray-600">© 2025 Traffic Earnings. All rights reserved.</p>
+    <footer class="py-6 bg-amber-500 ">
+        <p class="text-sm text-center text-gray-800">© 2025 <b>Web Traffic Earnings.</b> All rights reserved.</p>
     </footer>
 
-    
+
     <!-- Scroll Animation Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
